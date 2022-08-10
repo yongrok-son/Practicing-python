@@ -1,0 +1,5 @@
+print("ENTER YOUR AGE")
+MyAge = int(input())
+print("AGE : ", MyAge )
+print(type(MyAge))
+

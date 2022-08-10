@@ -1,0 +1,56 @@
+from asyncio import exceptions
+from encodings import utf_8
+from logging import exception
+
+
+f = open("i_have_a_dream.txt", 'r')
+conte = f.read()
+print(conte)
+f.close()
+# r read w write a append
+with open("i_have_a_dream.txt", 'r') as My_File:
+    conte = My_File.readlines()
+    print(type(conte))
+    
+
+f2 = open("i_have_a_dog.txt", 'w', encoding="utf8")
+for i in range(1, 11):
+    data = '{0}번째 줄입니다.\n'.format(i)
+    f2.writelines(data)
+f2. close()
+import os
+import shutil
+try:
+    os.mkdir("abc")
+except Exception:
+    print("exist")
+
+source1 = "i_have_a_dream.txt"
+dest = os.path.join("abc", "other_dream.txt")
+
+try:
+    shutil.copy(source1, dest)
+except Exception:
+    print("exist")
+
+
+
+import pathlib
+
+pathlib.Path.cwd()
+
+
+
+import pickle
+
+f3 = open("test_list.pickle", "wb")
+test3 = [1,2,3,4,5]
+pickle.dump(test3, f3)
+f3.close()
+
+f4 = open("test_list.pickle", "rb")
+test3_display = pickle.load(f4)
+print(test3_display)
+f4.close()
+
+

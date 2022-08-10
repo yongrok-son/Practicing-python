@@ -1,0 +1,27 @@
+#set 집합의 특성을 가짐
+# 중복불허 자료형
+
+
+a = set(["a","b","c","d","a","b"])
+print(a)
+print(type(a))
+b = {1,2,3,4,5}
+print(b)
+print(type(b))
+
+
+b.add(6)
+b.update([6,7,8])
+
+b.remove(6)
+b.discard(3)
+b.clear()
+print(b)
+
+
+# #a.union(b) 합집합
+# a | b
+# a.intersection(b) 교집합
+# a & b
+# a.difference(b) 차집합
+# a - b

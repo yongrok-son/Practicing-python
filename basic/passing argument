@@ -1,0 +1,17 @@
+#Keyword arguments
+def print_s(m_name, m_age):
+    print (f"you are : {m_age} your name is : {m_name}")
+
+
+print_s(m_age = 3, m_name= "rok")
+
+
+#Default arguments
+
+def print_s2(m_name, m_age = 0):
+    print (f"you are : {m_age} your name is : {m_name}")
+
+
+print_s2( m_name= "rok")
+print_s2( "rok")
+print_s2( "rok", 2)

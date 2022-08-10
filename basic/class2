@@ -1,0 +1,31 @@
+from unicodedata import name
+
+
+class person:
+    def __init__(self, name) -> None:
+        self.name=name
+        #self.__name=name  private.
+    def Introduce(self):
+        print(self.name)
+
+class Student(person):
+    def __init__(self, name, S_id) -> None:
+        super().__init__(name)
+        self.S_id = S_id
+    def Introduce(self):
+        print(self.name, self.S_id)
+        self.__S_id_plus()
+        
+    def __S_id_plus(self)-> None:
+        self.S_id += 1
+    #__ private _ protected 없음 public
+
+    def get_S_id(self):
+        print(self.S_id)
+#Introduce overriding
+#python은 오버로딩( (args, ....) 갯수에따라 함수를 다르게 정의함)을 지원하지않음
+Kim = Student('kim', 1)
+
+Kim.Introduce()
+print(Kim.name)
+Kim.get_S_id()

@@ -1,0 +1,32 @@
+from copy import copy
+from re import A
+
+
+A_list = [0 for i in range(4)]
+B_list = [1,1,1,0]
+C_list = [4-i for i in range(4)]
+
+C_list = C_list[1:]
+print (C_list)
+# def test1 (a):
+#     temp = copy(a)
+#     temp.append(0)
+    
+# test1(A_list)
+# print(A_list)
+# print (B_list.pop())
+# B_list.pop()
+# b = B_list
+# print(b)
+# b.insert(0,0)
+
+# print(b)
+
+# temp_k = key[i]
+# temp_j = temp_k.insert(0,0)
+# temp_i.append(temp_j)
+
+# C_list = copy(A_list)
+# C_list.pop(0)
+# print(A_list)
+# print(C_list)

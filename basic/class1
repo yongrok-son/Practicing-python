@@ -1,0 +1,23 @@
+from turtle import back
+
+
+class SoccerPlayer(object):
+    def __init__(self, name, position, back_num) -> None:
+        self.name = name
+        self.position = position
+        self.back_num = back_num
+
+    def __str__(self) -> str:
+        msg = 'wow'
+        return msg
+        
+Kim = SoccerPlayer('kim', 'mid', 3)        
+
+print(Kim)
+
+class SoccerPlayer2(object):
+    def __init__(self, name, position, back_num) -> None:
+        self.name = name
+        self.position = position
+        self.back_num = back_num
+

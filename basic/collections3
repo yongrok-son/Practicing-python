@@ -1,0 +1,9 @@
+from collections import Counter
+
+b_s_list = ['b','b', 's']
+
+c = Counter(b_s_list)
+
+print(c)
+
+print(c['b'])

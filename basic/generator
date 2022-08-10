@@ -1,0 +1,18 @@
+#메모리 절약
+from ast import comprehension
+import sys
+
+def general_list(value):
+    for i in range(value):
+        yield i
+
+
+
+for a in general_list(50):
+    print (a)
+
+
+# generator comprehension
+
+gen_ex = (n*n for n in range(500))
+print (list(gen_ex))

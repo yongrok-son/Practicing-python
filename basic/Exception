@@ -1,0 +1,18 @@
+
+for i in range(10):
+    try:
+        print(10/i)
+
+    except Exception as ex:
+        print(ex)
+        break
+    
+    finally:
+        print("end")
+
+
+def get_binary_number(decimal_num):
+    assert isinstance(decimal_num, int)
+    return bin(decimal_num)
+
+print(get_binary_number(10.0))

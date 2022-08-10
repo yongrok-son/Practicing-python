@@ -1,0 +1,13 @@
+def type_hint_example(name : str) -> str:
+    # """_summary_
+
+    # Args:
+    #     name (str): _description_
+
+    # Returns:
+    #     str: _description_
+    # """    
+    return "hi"
+
+
+print(type_hint_example("52"))

@@ -1,0 +1,13 @@
+# first-class objects
+def a(x):
+    return x*x
+def b(x):
+    return x*x*x
+
+def formula(method, arge_list):
+    return [method(i) for i in arge_list]
+
+ar_list= [1,2,3,4,5]
+print(formula(b, ar_list))
+
+#decorate function ???

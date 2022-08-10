@@ -1,0 +1,4 @@
+
+for i, v in enumerate("ABC"):
+    print (i, v)
+

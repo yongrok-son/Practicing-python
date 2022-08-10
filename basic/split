@@ -1,0 +1,13 @@
+#split()
+items = 'zero.one.two.three'
+a,b,c,d= items.split('.')
+print (items.replace('.', ' ',), '\n')
+
+print (items, '\n', a,b,c,d)
+
+
+#join()
+
+colors = ['red', 'blue', 'green']
+print('-'.join(colors))
+print('   '.join(colors))

@@ -1,0 +1,19 @@
+from collections import deque
+#linked list 특성 지원
+
+deque_list = deque()
+for i in range(5):
+    deque_list.append(i)
+
+print(deque_list)
+
+deque_list.rotate(1)
+print(deque_list)
+
+deque_list.append(10)
+deque_list.appendleft(10)
+print(deque_list)
+
+deque_list.extend([11,12,13])
+print(deque_list)
+

@@ -1,0 +1,27 @@
+import logging
+
+if __name__ == '__main__':
+    logger = logging.getLogger("main")
+    # logging.basicConfig(level=logging.DEBUG)
+
+
+    logger.debug("debug")
+    logger.info("info")
+    logger.warning('warning')
+    logger.error('errr')
+    logger.critical('critical')
+
+
+import configparser
+config = configparser.ConfigParser()
+
+config.read('example.cfg')
+print(config.sections())
+print(type(config['SectionOne']))
+
+for key in config['SectionTwo']:
+    value = config['SectionTwo'][key]
+    print('{0} , {1}'.format(key, value))
+
+
+# argparser ???

@@ -1,0 +1,10 @@
+alist = ['a1', 'a2', 'a3']
+blist = ['b1', 'b2', 'b3']
+result1 = [[a,b] for a, b in zip(alist, blist)]
+print (result1)
+
+result2 = [ c for c in zip(alist, blist)]
+print (result2)
+
+print (list(zip(alist,blist)))
+print (list(enumerate(zip(alist,blist))))

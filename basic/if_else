@@ -1,0 +1,28 @@
+print("age : ")
+My_age = int(input())
+if My_age > 30:
+    print ("over 30")
+else:
+    print ("under 30")
+
+a = 1
+b = 2
+if a == 1 and b == 2:
+    a += b
+if a == 2 or b == 3:
+    a *= b
+
+score = 67
+
+if score >= 90:
+    grade = 'a'
+elif score >= 80:
+    grade = 'b'
+elif score >= 70:
+    grade = 'c'
+elif score >= 60:
+    grade = 'd'
+elif score >= 50:
+    grade = 'e'
+
+print(grade)

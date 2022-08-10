@@ -1,0 +1,25 @@
+#database 관련 고유값(identifyer or Key)를 이용함
+
+student_info = {}
+print(type(student_info))
+
+student_info = {20150001:'rok', 20150002: 'rak'}
+
+print(student_info.items())
+
+for item in student_info.items():
+    print(item)
+    print(type(item))
+#데이터들은 tuple 타입으로 변경 불가. 삭제-추가 해야함
+
+print(student_info.keys())
+
+student_info[20150001] = 'rik'
+
+print(student_info.values())
+
+for i, j in student_info.items():
+    print ( f"Key : {i} \nValue : {j}" )
+
+print(20150001 in student_info.keys())
+print('rik' in student_info.values())

@@ -1,0 +1,6 @@
+from collections import defaultdict
+
+d = defaultdict()
+print (d)
+
+print (d["first"])

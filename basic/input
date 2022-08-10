@@ -1,0 +1,4 @@
+print("ENTER YOUR NAME")
+somebody = input()
+print("Hi", somebody)
+

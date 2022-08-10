@@ -1,0 +1,11 @@
+from collections import namedtuple
+#구조체와 유사함
+
+point = namedtuple('Point', ['x', 'y'])
+
+p = point(x=11,y =22)
+
+a,b = p
+
+print (p.x)
+print (a, b)
